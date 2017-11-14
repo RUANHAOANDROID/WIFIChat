@@ -57,6 +57,13 @@ TCP服务端口	12425
 
 <h1>引用到的第三方库</h1>
 
-[an example](http://example.com/ "Title")
+[gson](https://github.com/google/gson/)
+[litepal](https://github.com/LitePalFramework/LitePal/)
+[rxandroid](https://github.com/ReactiveX/RxAndroid/)
+[rxjava](https://github.com/ReactiveX/RxJavat/)
+[logger](https://github.com/orhanobut/logger/)
+[photoview](https://github.com/chrisbanes/PhotoView/)
+[matisse](https://github.com/zhihu/Matisse/)
+[rxpermissions](https://github.com/tbruyelle/RxPermissions/)
 
-[This link](http://example.net/)
+
