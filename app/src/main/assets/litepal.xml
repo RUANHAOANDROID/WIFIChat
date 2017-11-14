@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="WiFIChat" />
+
+    <version value="1" />
+
+    <list>
+
+        <mapping class="com.ruanhao.wifichat.db.msg" />
+
+        <mapping class="com.ruanhao.wifichat.db.user_msg" />
+
+        <mapping class="com.ruanhao.wifichat.db.msg_attachment" />
+
+    </list>
+
+</litepal>

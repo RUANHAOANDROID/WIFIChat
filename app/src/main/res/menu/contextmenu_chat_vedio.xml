@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu_vedio_tack" android:title="@string/take_vedio"></item>
+    <item android:id="@+id/menu_vedio_choose" android:title="@string/choose_from_album"></item>
+    <item android:id="@+id/menu_vedio_cancel" android:title="@string/cancel"></item>
+</menu>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/discover"
+    android:orientation="vertical"
+    android:padding="@dimen/value_margin_size"
+    tools:ignore="ContentDescription" >
+
+    <RelativeLayout
+        android:id="@+id/btn_personal_infomation"
+        style="@style/style_set_item"
+        android:layout_height="@dimen/value_me_item_size"
+        android:background="@drawable/selector_item_single" >
+
+        <ImageView
+            android:id="@+id/img_head_portrait"
+            android:layout_width="@dimen/value_info_head_size"
+            android:layout_height="@dimen/value_info_head_size"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/value_margin_size"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_person" />
+
+        <TextView
+            android:id="@+id/text_name"
+            style="@style/Font_BlackSize18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/value_margin_size"
+            android:layout_toLeftOf="@+id/ivMeEnter"
+            android:layout_toRightOf="@+id/img_head_portrait"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="天王盖地虎" />
+
+        <TextView
+            android:id="@+id/text_account"
+            style="@style/Font_GraySize12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/value_margin_size"
+            android:layout_toLeftOf="@+id/ivMeEnter"
+            android:layout_toRightOf="@+id/img_head_portrait"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="110" />
+
+        <ImageView
+            android:id="@+id/ivMeEnter"
+            style="@style/style_set_enter" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/value_margin_size2" />
+
+    <RelativeLayout
+        android:id="@+id/llsetting"
+        style="@style/style_set_item"
+        android:background="@drawable/selector_item_single" >
+
+        <TextView
+            android:id="@+id/tvSexTitle"
+            style="@style/style_set_title"
+            android:drawableLeft="@drawable/icon_set"
+            android:text="@string/setting" />
+
+        <ImageView
+            android:id="@+id/ivSetEnter"
+            style="@style/style_set_enter" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/value_margin_size2" />
+
+</LinearLayout>

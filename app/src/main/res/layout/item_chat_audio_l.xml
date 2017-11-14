@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="4dp"
+    tools:ignore="ContentDescription" >
+
+    <TextView
+        android:id="@+id/tvtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/roundrect_grey"
+        android:gravity="center_horizontal"
+        android:paddingBottom="2dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="2dp"
+        android:textColor="#ddd" />
+
+    <ImageView
+        android:id="@+id/chperson"
+        android:layout_width="@dimen/value_head_size"
+        android:layout_height="@dimen/value_head_size"
+        android:layout_alignParentLeft="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@+id/tvtime"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/default_person" />
+
+    <TextView
+        android:id="@+id/tvSenderName"
+        style="@style/Font_GraySize12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvtime"
+        android:layout_marginRight="@dimen/value_char_msg_margin"
+        android:layout_toRightOf="@+id/chperson"
+        android:paddingLeft="12dp" />
+
+    <FrameLayout
+        android:id="@+id/tvcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@+id/tvSenderName"
+        android:layout_marginRight="@dimen/value_char_msg_margin"
+        android:layout_toRightOf="@+id/chperson"
+        android:background="@drawable/chat_item_in"
+        android:paddingLeft="12dp" >
+
+        <TextView
+            android:id="@+id/tvVoice"
+            style="@style/Font_GraySize12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/value_margin_size"
+            tools:ignore="UseCompoundDrawables,ContentDescription" >
+        </TextView>
+
+        <FrameLayout />
+
+        <ProgressBar
+            android:id="@+id/pbMsg"
+            style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvcontent"
+            android:layout_alignTop="@+id/tvcontent"
+            android:layout_marginLeft="@dimen/value_char_msg_margin_neg"
+            android:layout_toRightOf="@+id/tvcontent"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivRetry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvcontent"
+            android:layout_alignTop="@+id/tvcontent"
+            android:layout_marginLeft="@dimen/value_char_msg_margin_neg"
+            android:layout_toRightOf="@+id/tvcontent"
+            android:src="@drawable/icon_fail_waring"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivPlayed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvcontent"
+            android:layout_alignTop="@+id/tvcontent"
+            android:layout_marginLeft="@dimen/value_char_msg_margin_neg"
+            android:layout_toRightOf="@+id/tvcontent"
+            android:src="@drawable/icon_tip"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/selector_list_item"
+    android:paddingBottom="@dimen/value_margin_half_size"
+    android:paddingLeft="@dimen/value_margin_half_size"
+    android:paddingRight="@dimen/value_margin_half_size"
+    android:paddingTop="@dimen/value_margin_half_size"
+    android:id="@+id/chatlist_click" >
+
+    <ImageView
+        android:id="@+id/chperson"
+        android:layout_width="@dimen/value_head_size"
+        android:layout_height="@dimen/value_head_size"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/value_margin_size"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter" 
+        />
+
+    <ImageView
+        android:id="@+id/iv_group_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvTip"
+        style="@style/Font_WhiteSize12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/chperson"
+        android:layout_alignTop="@+id/chperson"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/icon_tip"
+        android:gravity="center"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvcontacts"
+        style="@style/Font_BlackSize18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/tvtime"
+        android:layout_toRightOf="@+id/chperson"
+        android:gravity="center_vertical"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tvtime"
+        style="@style/Font_GraySize12"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/tvcontent"
+        style="@style/Font_GraySize14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/chperson"
+        android:gravity="center_vertical"
+        android:singleLine="true" />
+
+</RelativeLayout>

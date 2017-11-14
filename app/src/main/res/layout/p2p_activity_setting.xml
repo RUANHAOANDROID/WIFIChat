@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/discover"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription" >
+    <com.ruanhao.wifichat.widget.TitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/value_margin_size" >
+
+            <LinearLayout style="@style/style_set_group" 
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/btn_set_msg"
+                    style="@style/style_set_item"
+                    android:background="@drawable/selector_item_top" >
+
+                    <TextView
+                        style="@style/style_set_title"
+                        android:text="@string/new_news_reminders" />
+
+                    <ImageView style="@style/style_set_enter" />
+                </RelativeLayout>
+
+                <View
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/listline" />
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/btn_privates"
+                    style="@style/style_set_item"
+                    android:background="@drawable/selector_item_mid" >
+
+                    <TextView
+                        style="@style/style_set_title"
+                        android:text="@string/privates" />
+
+                    <ImageView style="@style/style_set_enter" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/listline" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_common"
+                    style="@style/style_set_item"
+                    android:background="@drawable/selector_item_mid" >
+
+                    <TextView
+                        style="@style/style_set_title"
+                        android:text="@string/common" />
+
+                    <ImageView style="@style/style_set_enter" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/listline" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_location"
+                    style="@style/style_set_item"
+                    android:background="@drawable/selector_item_bottom" >
+
+                    <TextView
+                        style="@style/style_set_title"
+                        android:text="@string/location" />
+
+                    <ImageView style="@style/style_set_enter" />
+                </RelativeLayout>
+                
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/listline" />
+                <RelativeLayout
+                    android:id="@+id/btn_video"
+                    style="@style/style_set_item"
+                    android:background="@drawable/selector_item_bottom" >
+
+                    <TextView
+                        style="@style/style_set_title"
+                        android:text="@string/videoMeeting" />
+
+                    <ImageView style="@style/style_set_enter" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/value_margin_size2" />
+
+            <RelativeLayout
+                android:id="@+id/btn_change_password"
+                style="@style/style_set_item"
+                android:background="@drawable/selector_item_single"
+                tools:ignore="UselessParent" 
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/style_set_title"
+                    android:text="修改密码" />
+
+                <ImageView style="@style/style_set_enter" />
+            </RelativeLayout>
+            
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/value_margin_size2" />
+
+            <RelativeLayout
+                android:id="@+id/btn_about_wechat"
+                style="@style/style_set_item"
+                android:background="@drawable/selector_item_single"
+                tools:ignore="UselessParent" >
+
+                <TextView
+                    style="@style/style_set_title"
+                    android:text="@string/about_wechat" />
+
+                <ImageView style="@style/style_set_enter" />
+            </RelativeLayout>            
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/value_margin_size2" />
+
+            <Button
+                android:id="@+id/btn_logout"
+                style="@style/Font_WhiteSize18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/logout_button"
+                android:text="@string/logout" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

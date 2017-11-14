@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- Title -->
+    <dimen name="title_view_left_back_padding_left">12.0dip</dimen>
+    <dimen name="title_view_left_back_padding_right">12.0dip</dimen>
+    <dimen name="header_bar_height">45.0dip</dimen>
+    <dimen name="title_dividing_line_margin_top">10dip</dimen>
+    <dimen name="dividing_line_margin_top">10dip</dimen>
+    <dimen name="dividing_line_margin_top2">15dip</dimen>
+    <dimen name="dividing_line_width_height">0.5dip</dimen>
+    <dimen name="album_header_bar_height">50.0dip</dimen>
+    <dimen name="login_dividing_line_margin_top">15dip</dimen>
+    <dimen name="button_minWidth">130.0dip</dimen>
+    <dimen name="button_margin_bottom">15.0dip</dimen>
+    <dimen name="input_margin_size">22.0dip</dimen>
+    <dimen name="app_store_item_height">50.0dip</dimen>
+    <dimen name="app_store_text_item_height">14.0sp</dimen>
+    <dimen name="app_store_badge_margin">12.0dip</dimen>
+    <dimen name="app_store_item_padding_x">10.0dip</dimen>
+    <dimen name="app_store_item_padding_y">3.0dip</dimen>
+    <dimen name="app_store_item_icon_x">48.0dip</dimen>
+    <dimen name="app_store_item_icon_y">48.0dip</dimen>
+    <dimen name="app_store_category_text_size">16.0dip</dimen>
+    <dimen name="app_store_title_height">64.0dip</dimen>
+    <dimen name="app_store_title_icon_height">42.0dip</dimen>
+    <dimen name="app_store_title_text_size">20.0dip</dimen>
+    <dimen name="app_store_subtitle_text_size">16.0dip</dimen>
+    <dimen name="app_store_app_title_text_size">16.0dip</dimen>
+    <dimen name="app_downloading_progress_padding">10.0dip</dimen>
+    <dimen name="app_store_header_title_text_size">24.0dip</dimen>
+    <dimen name="app_store_detail_padding">8.0dip</dimen>
+    <dimen name="round_corner_radius">5.0dip</dimen>
+    <dimen name="checking_state_icon_width">24.0dip</dimen>
+    <dimen name="checking_state_icon_height">24.0dip</dimen>
+    <dimen name="nui_header_height">64.0dip</dimen>
+    <dimen name="nui_footer_height">40.0dip</dimen>
+    <dimen name="nui_text_padding">10.0dip</dimen>
+    <dimen name="nui_header_font">28.0sp</dimen>
+    <dimen name="nui_title_font">20.0sp</dimen>
+    <dimen name="nui_normal_font">16.0sp</dimen>
+    <dimen name="nui_button_width">160.0dip</dimen>
+    <dimen name="nui_header_two_font">20.0dip</dimen>
+    <dimen name="tab_item_padding">10.0dip</dimen>
+    <dimen name="option_text">24.0sp</dimen>
+    <dimen name="option_item_height">60.0dip</dimen>
+    <dimen name="tab_item_height">60.0dip</dimen>
+    <dimen name="tab_item_text_size">14.0sp</dimen>
+    <dimen name="mi_zone_help_text_size">15.0dip</dimen>
+    <dimen name="mi_zone_step_size">24.0dip</dimen>
+    <dimen name="mi_zone_step_text_size">12.0dip</dimen>
+    <dimen name="mi_zone_help_point_width">35.0dip</dimen>
+    <dimen name="mi_zone_help_point_height">16.0dip</dimen>
+    <dimen name="shortcut_icon_size">48.0dip</dimen>
+    <dimen name="mi_zone_store_item_height">70.0dip</dimen>
+    <dimen name="app_store_app_summary_text_size">14.0dip</dimen>
+    <dimen name="mi_zone_setup_text_size">18.0dip</dimen>
+    <dimen name="mi_zone_setup_text_size_2">14.0dip</dimen>
+    <dimen name="mi_zone_progress_bar_width">140.0dip</dimen>
+    <dimen name="splash_logo_height">150.0dip</dimen>
+    <dimen name="about_mobile_at_work_font">20.0sp</dimen>
+    <dimen name="kiosk_header_height">60.0dip</dimen>
+    <dimen name="kiosk_header_height_tablet">90.0dip</dimen>
+    <dimen name="kiosk_footer_height">45.0dip</dimen>
+    <dimen name="kiosk_header_icon_dim">45.0dip</dimen>
+    <dimen name="kiosk_menu_dim">45.0dip</dimen>
+    <dimen name="kiosk_app_icon_dim">85.0dip</dimen>
+    <dimen name="kiosk_edit_text_padding">7.0dip</dimen>
+    <dimen name="kiosk_launcher_item_size">80.0dip</dimen>
+    <dimen name="dialog_icon_dim">21.329987dip</dimen>
+
+    <dimen name="space_small">6.0dip</dimen>
+    <dimen name="space_small_h">8.0dip</dimen>
+    <dimen name="space_medium">10.0dip</dimen>
+    <dimen name="space_medium_h">14.0dip</dimen>
+    <dimen name="space_large">20.0dip</dimen>
+    <dimen name="space_large_h">28.0dip</dimen>
+    <dimen name="width_small">54.0dip</dimen>
+    <dimen name="height_small">12.0dip</dimen>
+    <dimen name="width_medium">90.0dip</dimen>
+    <dimen name="height_medium">20.0dip</dimen>
+    <dimen name="width_large">180.0dip</dimen>
+    <dimen name="height_large">40.0dip</dimen>
+    <dimen name="indicator_size">10.0dip</dimen>
+    <dimen name="indicator_step_width">16.0dip</dimen>
+    <dimen name="font_size_l">24sp</dimen>
+    <dimen name="font_size_m">20sp</dimen>
+    <dimen name="font_size_s">16sp</dimen>
+
+    <dimen name="image_search_list">48dip</dimen>
+    <dimen name="image_update_list">48dip</dimen>
+    <dimen name="image_rank_list">72dip</dimen>
+
+    <dimen name="maintab_height">64dip</dimen>
+    <dimen name="maintab_image_size">32dip</dimen>
+    <dimen name="update_bg_size">32dip</dimen>
+    <dimen name="topbar_width">48.0dip</dimen>
+    <dimen name="topbar_forward_maxw">80dip</dimen>
+    <dimen name="bottombar_width">48.0dip</dimen>
+    <dimen name="topads_height">150dip</dimen>
+
+    <dimen name="search_list_height">64dip</dimen>
+    <dimen name="update_list_height">64dip</dimen>
+    <dimen name="drawable_txt_dis">2dip</dimen>
+
+    <dimen name="image_proinfo_size">96dip</dimen>
+    <dimen name="protab_height">48dip</dimen>
+    <dimen name="probtn_height">22dip</dimen>
+
+    <dimen name="register_padleft_edit">100dip</dimen>
+    <dimen name="register_padtop_text">12dip</dimen>
+
+    <dimen name="login_dlg_width">250dip</dimen>
+
+    <dimen name="distance_1">4dip</dimen>
+    <dimen name="distance_2">6dip</dimen>
+    <dimen name="distance_3">8dip</dimen>
+    <dimen name="distance_4">12dip</dimen>
+    <dimen name="distance_5">30dip</dimen>
+    <dimen name="distance_6">30dip</dimen>
+
+    <dimen name="grid_expected_size">120dp</dimen>
+    <dimen name="item_margin_horizontal">24dp</dimen>
+    <dimen name="item_margin_vertical">8dp</dimen>
+
+</resources>

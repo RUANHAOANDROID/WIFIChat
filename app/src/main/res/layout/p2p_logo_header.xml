@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_header"
+    style="@style/NUIHeader" >
+
+    <TextView
+        android:id="@+id/headerLabel"
+        style="@style/NUIHeaderText"
+        android:layout_centerInParent="true"
+        android:background="@drawable/title"
+        android:text="上线" />
+
+</RelativeLayout>

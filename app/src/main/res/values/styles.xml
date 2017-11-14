@@ -1,0 +1,124 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Font_BlackSize18">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="style_set_item">
+        <item name="android:padding">@dimen/value_margin_size</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="style_set_enter">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/arrows</item>
+    </style>
+
+    <style name="style_set_title" parent="@style/Font_BlackSize18">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Font_GraySize12">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="dividing_line_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/actionsheet_gray</item>
+    </style>
+
+    <style name="Font_BlackSize26">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+    <style name="Font_BlackSize12">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="Font_GraySize14">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Font_WhiteSize20">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="edit_style_m">
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/color_a</item>
+        <item name="android:textColorHint">@color/color_c</item>
+        <item name="android:textSize">@dimen/font_size_m</item>
+        <item name="android:paddingTop">@dimen/distance_1</item>
+        <item name="android:paddingBottom">@dimen/distance_1</item>
+    </style>
+
+    <style name="NUIHeader">
+        <item name="android:background">@color/header_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/nui_header_height</item>
+    </style>
+
+    <style name="NUIHeaderText">
+        <item name="android:textSize">@dimen/nui_header_font</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="style_set_group">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/discover_item_bg</item>
+    </style>
+    <style name="Font_BlackSize14">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="style_set_item_top" parent="@style/style_set_item">
+        <item name="android:background">@drawable/selector_item_top</item>
+    </style>
+    <style name="Font_WhiteSize18">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="Font_WhiteSize14">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="Title_Style">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="style_catalog" parent="@style/Font_WhiteSize12">
+        <item name="android:background">@android:color/darker_gray</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="Font_WhiteSize12">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

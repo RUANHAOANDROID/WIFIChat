@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/tvContent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+	android:padding="@dimen/value_margin_size"
+	android:gravity="left"
+    style="@style/Font_BlackSize18"
+    android:text="chattext" >
+</TextView>

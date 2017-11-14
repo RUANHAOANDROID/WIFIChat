@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/map_pop_info_s" >
+
+    <Button
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sendmessage"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="8dp"
+        android:text="导航" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sendmessage"
+        android:layout_alignBottom="@+id/sendmessage"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="18dp"
+        android:text="南宁凭祥公安局警官" />
+
+    <Button
+        android:id="@+id/sendmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/navigation"
+        android:layout_alignBottom="@+id/navigation"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/name"
+        android:text="消息" />
+
+</RelativeLayout>

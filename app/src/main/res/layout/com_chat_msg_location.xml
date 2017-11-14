@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="8dp" xmlns:tools="http://schemas.android.com/tools" tools:ignore="ContentDescription">
+    
+    <TextView
+        android:id="@+id/tvLocationTitle"
+        style="@style/Font_BlackSize12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignLeft="@+id/ivLocation"
+        android:layout_alignRight="@+id/ivLocation"
+        android:text="@string/location" />
+    
+    <View
+        android:id="@+id/vPart" 
+        android:layout_below="@+id/tvLocationTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_alignRight="@+id/ivLocation"
+        android:background="@color/listline"/>
+
+
+    <ImageView
+        android:id="@+id/ivLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/vPart"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_chat_add_location" />
+ 
+</RelativeLayout>

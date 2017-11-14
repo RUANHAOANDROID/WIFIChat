@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chatting_bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btnSwitch"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:src="@drawable/chat_input_voice" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="6" >
+
+            <LinearLayout
+                android:id="@+id/inputbody_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/TxtInput"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/chatting_dialog"
+                    android:ems="3"
+                    android:inputType="textMultiLine"
+                    android:maxLength="200"
+                    android:maxLines="3"
+                    android:minLines="1"
+                    android:padding="6dp"
+                    android:textColor="@android:color/black" >
+                </EditText>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSpeak"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/sel_input_btn"
+                android:gravity="center"
+                android:text="@string/down_speak"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" 
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/sel_input_btn"
+                android:text="@string/send"
+                android:textColor="@android:color/black"
+                android:textSize="12dp"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/btnAddition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:src="@drawable/sel_chatting_add_btn" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/p2p_chat_input_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:divider="@android:color/transparent"
+        android:fadingEdge="none"
+        android:gravity="center_vertical|center_horizontal"
+        android:horizontalSpacing="16dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:padding="16dp"
+        android:scrollbars="none"
+        android:verticalSpacing="16dp"
+        android:visibility="gone" />
+
+</LinearLayout>

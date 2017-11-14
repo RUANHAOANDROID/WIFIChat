@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="4dp"
+    tools:ignore="ContentDescription" >
+
+    <TextView
+        android:id="@+id/tvtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/roundrect_grey"
+        android:gravity="center_horizontal"
+        android:paddingBottom="2dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="2dp"
+        android:textColor="#ddd" />
+
+    <ImageView
+        android:id="@+id/chperson"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@+id/tvtime"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/default_person" />
+
+    <FrameLayout
+        android:id="@+id/tvcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@+id/tvtime"
+        android:layout_marginLeft="40dp"
+        android:layout_toLeftOf="@+id/chperson"
+        android:background="@drawable/chat_item_out"
+        android:paddingRight="12dp" >
+
+        <TextView
+            android:id="@+id/tvFile"
+            style="@style/Font_BlackSize14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/atach_file"
+            android:padding="@dimen/value_margin_size"
+            tools:ignore="ContentDescription" >
+        </TextView>
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/pbMsg"
+        style="@android:style/Widget.ProgressBar.Small.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvcontent"
+        android:layout_alignTop="@+id/tvcontent"
+        android:layout_marginRight="-40dp"
+        android:layout_toLeftOf="@+id/tvcontent"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivRetry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvcontent"
+        android:layout_alignTop="@+id/tvcontent"
+        android:layout_marginRight="-40dp"
+        android:layout_toLeftOf="@+id/tvcontent"
+        android:src="@drawable/icon_fail_waring"
+        android:visibility="gone" />
+
+</RelativeLayout>
