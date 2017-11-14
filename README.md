@@ -43,9 +43,9 @@ msg_time	datetime		消息发送时间或接收时间。
 | col 2 is |    centered   |   $12 |
 | col 3 is | right-aligned |    $1 |
 
-|   	|   	|   	|   	|   	|
-|---	|---	|---	|---	|---	|
-|   	|   	|   	|   	|   	|
-|   	|   	|   	|   	|   	|
-|   	|   	|   	|   	|   	|
+| Tables 	|     Are  	|  Cool 	|
+|     ---	|       ---	|    ---	|
+|        	|          	|       	|
+|        	|          	|       	|
+|   	     |   	       |   	    |
 
