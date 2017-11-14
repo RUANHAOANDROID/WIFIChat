@@ -5,6 +5,7 @@ UDP服务端口	12426（用于监听组播消息，服务端类是MulticastSocke
 TCP服务端口	12425
 
 <h1>数据库表设计<h1>
+
 id	bigint		自增ID
 type	tinyint		消息类型。
 1：文本  2：位置  3：附件通知
