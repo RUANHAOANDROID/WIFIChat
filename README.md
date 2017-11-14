@@ -1,8 +1,8 @@
 # WIFI-Chat
 网络通信基于TCP/UDP
-UDP服务端口	12425（用于监听单播或广播消息，服务端类是DatagramSocket）
-UDP服务端口	12426（用于监听组播消息，服务端类是MulticastSocket）
-TCP服务端口	12425
+UDP服务端口	12425（用于监听单播或广播消息，服务端类是DatagramSocket/n
+UDP服务端口	12426（用于监听组播消息，服务端类是MulticastSocket/n
+TCP服务端口	12425/n
 
 <h1>数据库表设计</h1>
 
