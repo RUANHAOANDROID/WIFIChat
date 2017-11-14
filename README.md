@@ -38,12 +38,12 @@ msg_time	datetime		消息发送时间或接收时间。
 对于当前用户发送的消息，该时间为发送时间；
 对于当前用户接收的消息，该时间为接收时间；
 | Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
+|---|---|---|
 | col 1 is |  left-aligned | $1600 |
 | col 2 is |    centered   |   $12 |
 | col 3 is | right-aligned |    $1 |
 
-| Tables 	|     Are  	|  Cool 	|
+| 字段   	|     数据类型  	|  注释 	|
 |     ---	|       ---	|    ---	|
 |        	|          	|       	|
 |        	|          	|       	|
