@@ -21,10 +21,10 @@ TCP服务端口	12425
 
 <h1>数据库表设计</h1>
 <h2>消息表</h2>
-| 字段          | 数据类型         | 注释  |
+| 字段           | 数据类型       | 注释  |
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
-
+<table></table>
