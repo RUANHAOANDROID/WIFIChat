@@ -47,11 +47,8 @@ msg_time	datetime		消息发送时间或接收时间。
 |     ---	|       ---	|    ---	|
 |   id     	|     bigint     	|    消息类型   	|
 |    type    	|   tinyint       	|    消息类型 (1：文本  2：位置  3：附件通知)  	|
-|   	content     |   	text       |   	 消息内容((1). 对于文本消息，见“发送文本消息”协议消息正文的content字段内容；
-(2). 对于位置消息，见“发送位置消息”协议消息正文的content字段内容；
-(3). 对于附件通知消息，见“发送附件通知消息”协议消息正文的content字段内容；)  |
-|   	content     |   	text       |   	 消息内容   |
-|   	content     |   	text       |   	 消息内容   |
-|   	content     |   	text       |   	 消息内容   |
-|   	content     |   	text       |   	 消息内容   |
+|   	msg_time     |   	text       |   	 消息内容   |
+|   	content     |   	datetime       |   	消息发送时间或接收时间   |
+
+
 
