@@ -58,12 +58,27 @@ TCP服务端口	12425
 <h1>引用到的第三方库</h1>
 
 [gson](https://github.com/google/gson/)
+
 [litepal](https://github.com/LitePalFramework/LitePal/)
+
 [rxandroid](https://github.com/ReactiveX/RxAndroid/)
+
 [rxjava](https://github.com/ReactiveX/RxJavat/)
+
 [logger](https://github.com/orhanobut/logger/)
+
 [photoview](https://github.com/chrisbanes/PhotoView/)
+
 [matisse](https://github.com/zhihu/Matisse/)
+
 [rxpermissions](https://github.com/tbruyelle/RxPermissions/)
+
+<h1>不足以及改进</h1>
+
+第三方库使用比较零散 未包装
+
+数据库设计
+
+ Android5.0版本以后的权限问题
 
 
