@@ -30,5 +30,21 @@ TCP服务端口	12425
 |   	msg_time     |   	text       |   	 消息内容   |
 |   	content     |   	datetime       |   	消息发送时间或接收时间   |
 
+<h2>用户关系表</h2>
+
+
+| Tables   |      Are      |  Cool |
+|       ---|     --- |    --- |
+| col 1 is |  left-aligned | $1600 |
+| col 2 is |    centered   |   $12 |
+| col 3 is | right-aligned |    $1 |
+
+|username		| |	当前登录用户的用户名|
+|msg_id|	bigint	|	消息id|
+|dir_type	|		|消息方向(1：当前用户发送的消息   2：当前用户收到的消息)|
+|other_username|	varchar(32)	|	对方用户名(当前用户发送的消息，对方用户为消息接收者.对于当前用户收到的消息，对方用户为消息发送者)|
+|other_name	|varchar(128)|		对方姓名|
+|status	|tinyint|	消息发送状态，该字段只对当前用户发送的消息有效（0：sending 1：error2：receive）|
+|is_read	|tinyint		|当前用户是否已读消息，该字段只对当前用户收到的消息有效（0：当前用户未读  1：当前用户已读）|
 
 
