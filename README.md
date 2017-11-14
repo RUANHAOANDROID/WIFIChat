@@ -25,7 +25,7 @@ TCP服务端口	12425
 |---:|---:|---:|
 |  id | bigint  | 自增ID  | 
 |type  |tinyint   | 消息类型  |   
-|   |   |   |   
+ 
 
 id	bigint		自增ID
 type	tinyint		消息类型。
