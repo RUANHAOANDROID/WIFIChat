@@ -49,7 +49,7 @@ TCP服务端口	12425
 |id|	bigint|		系统自增ID|
 |msg_id	|bigint	|	消息id（这里为附件通知消息的id）|
 |file_uuid|	varchar(48)	|	附件uuid|
-||type	|tinyint|		附件类型（1照片2音频3视频4文件）|
+|type	|tinyint|		附件类型（1照片2音频3视频4文件）|
 |filename|	varchar(128)	|	文件名称|
 |size	|bigint		|文件大小，单位：byte|
 |uri	|varchar(1024)	|	文件本地存储路径。对于文件发送方，该字段为发送文件所存储在本地的路径；对于文件接收方，该字段为接收文件所保存在本地的路径。|
