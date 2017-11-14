@@ -27,4 +27,13 @@ TCP服务端口	12425
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
-<table></table>
+<table border="1">
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+</table>
