@@ -57,6 +57,6 @@ TCP服务端口	12425
 
 <h1>引用到的第三方库</h1>
 
-This is [an example](http://example.com/ "Title") inline link.
+[an example](http://example.com/ "Title")
 
-[This link](http://example.net/) has no title attribute.
+[This link](http://example.net/)
