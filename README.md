@@ -9,6 +9,8 @@
 
 <h1>网络通信</h1>
 
+核心通信代码借鉴了[kouchat](https://github.com/RUANHAOANDROID/kouchat-android/)
+
 UDP服务端口	12425（用于监听单播或广播消息，服务端类是DatagramSocket)
 
 UDP服务端口	12426（用于监听组播消息，服务端类是MulticastSocket)
