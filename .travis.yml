@@ -1,4 +1,4 @@
-language: java
+language: ANDROID
 rvm:
  - 2.2
  - java
