@@ -27,6 +27,7 @@ android:
     - sys-img-armeabi-v7a-android-22
     - sys-img-armeabi-v7a-android-17
     
+sudo: false
 
 cache:
   directories:
