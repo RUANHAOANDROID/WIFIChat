@@ -22,8 +22,3 @@ sudo: false
 # script for build and release via Travis to Bintray
 script: gradle/buildViaTravis.sh
 
-cache:
-  directories:
-    - $HOME/.gradle/caches/
-    - $HOME/.gradle/wrapper/
-    - $HOME/.android/build-cache
