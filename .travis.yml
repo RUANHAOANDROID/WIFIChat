@@ -1,5 +1,3 @@
 language: ANDROID
-rvm:
- - 2.2
- - java
- - rbx-3
+os: linux
+
