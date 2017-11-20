@@ -9,3 +9,5 @@ android:
     - platform-tools
     - android-26
     - build-tools-26.1.4
+    
+sudo: false
