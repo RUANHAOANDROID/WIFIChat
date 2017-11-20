@@ -83,4 +83,4 @@ TCP服务端口	12425
 
  Android5.0版本以后的权限问题
 
-<a href='https://travis-ci.org/ReactiveX/RxAndroid/builds'><img src='https://api.travis-ci.org/ReactiveX/RxAndroid.svg?branch=2.x'></a>
+<a href='https://travis-ci.org/RUANHAOANDROID/WIFI-Chat'><img src='https://travis-ci.org/RUANHAOANDROID/WIFI-Chat'></a>
