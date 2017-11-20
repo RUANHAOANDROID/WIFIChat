@@ -3,14 +3,21 @@ before_install:
      - chmod +x gradlew
 jdk:
   - oraclejdk8
-
+env:
+  global:
+    - ANDROID_TARGET=android-15
+    - ANDROID_ABI=armeabi-v7a
+    
 android:
   components:
     - tools
     - platform-tools
     - android-26
-    - build-tools-26.1.4
-    
+    - build-tools-26  
+    - extra-android-m2repository
+    - sys-img-${ANDROID_ABI}-${ANDROID_TARGET}.1.4
+    - extra-android-m2repository
+    - sys-img-${ANDROID_ABI}-${ANDROID_TARGET}
 # as per http://blog.travis-ci.com/2014-12-17-faster-builds-with-container-based-infrastructure/
 sudo: false
 
@@ -19,3 +26,6 @@ script: gradle/buildViaTravis.sh
 
 notifications:
   email: false
+  
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
