@@ -84,3 +84,5 @@ TCP服务端口	12425
  Android5.0版本以后的权限问题
 
 <a href='https://travis-ci.org/RUANHAOANDROID/WIFI-Chat'><img src='https://travis-ci.org/RUANHAOANDROID/WIFI-Chat.svg?branch=master'></a>
+
+<a href="https://snyk.io/test/github/ruanhaoandroid/wifi-chat"><img src="https://snyk.io/test/github/ruanhaoandroid/wifi-chat/badge.svg" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/ruanhaoandroid/wifi-chat" style="max-width:100%;"></a>
