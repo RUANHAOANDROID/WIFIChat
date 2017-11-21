@@ -34,12 +34,12 @@ public class P2PService extends Service {
 	public Map<String, OnlineUserInfo> mOnlineUsers = new ConcurrentHashMap<String, OnlineUserInfo>();
 	UsersListener userListener;// 用户上下线回调
 	private Map<String, user_msg> conversations = new HashMap<>();// 会话列表
-	
+
 	//会话管理
 	private ChatManager mChatManager = null;
 	//数据连接管理
 	private DataConnection mDataConnection = null;
-	
+
 	Userinfo me;
 	@Override
 	public IBinder onBind(Intent intent) {
