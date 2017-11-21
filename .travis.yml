@@ -26,3 +26,5 @@ notifications:
   
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+codecov：
+  token：ae2eca0d-b7f5-46b3-a462-66fd4117a213
