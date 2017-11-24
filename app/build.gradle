@@ -58,11 +58,11 @@ android {
             if ("true".equals(IS_JENKINS)){
                 storeFile file ("服务器上KeyStore的路径")
             }else{
-                storeFile file(STORE_FILE_PATH)
+                storeFile file("E:\\Android\\android.keystore")
             }
-            keyAlias KEY_ALIAS
-            keyPassword KEY_PASSWORD
-            storePassword STORE_PASSWORD
+            keyAlias "android.keystore"
+            keyPassword "rh123456"
+            storePassword "rh123456"
         }
     }
     applicationVariants.all{
