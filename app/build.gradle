@@ -33,7 +33,7 @@ android {
             //是否混淆
             minifyEnabled false
             //忽略无用资源
-            shrinkResources true
+            shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         //调试
@@ -65,10 +65,9 @@ android {
             storePassword "rh123456"
         }
     }
-    applicationVariants.all{
-        variant->
-            variant.outputs.each {
-                output->
+    def BUILD_PATH="myapk"
+    applicationVariants.all{ variant->
+            variant.outputs.all {
                     def newName;
                     def timeNow
                     def outDirectory
@@ -90,7 +89,7 @@ android {
                         }
 
                     }
-                    output.outputFile = new File(outDirectory+"/" + timeNow,newName)
+                outputFileName = new File(outDirectory+"/" + timeNow , newName)
             }
 
     }
