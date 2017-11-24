@@ -5,33 +5,94 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 apply plugin: 'jacoco-android'
+//获取时间
+def getDate(){
+    def date =new Date()
+    return date.format('yyyy-MM-dd-HH-mm')
+}
+//版本号
+def verCode =1
+
+//版本名
+def verName="1.0.0"
 
 android {
     compileSdkVersion 26
+    buildToolsVersion "26.0.2"
     defaultConfig {
         applicationId "com.ruanhao.wifichat"
         minSdkVersion 17
         targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
+        versionCode verCode
+        versionName verName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+        //发布
         release {
+            //是否混淆
             minifyEnabled false
+            //忽略无用资源
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        //调试
         debug {
             applicationIdSuffix '.debug'
             versionNameSuffix '-debug'
             testCoverageEnabled true
         }
     }
+    //多版本差异化打包
     productFlavors {
 
     }
     lintOptions {
         abortOnError false
+    }
+    signingConfigs{
+        signingConfig{
+            //由于本地打包使用的是本机上的KeyStore
+            //而Jenkins打包用的是服务器上的KeyStore
+            //两个路径不一样
+            if ("true".equals(IS_JENKINS)){
+                storeFile file ("服务器上KeyStore的路径")
+            }else{
+                storeFile file(STORE_FILE_PATH)
+            }
+            keyAlias KEY_ALIAS
+            keyPassword KEY_PASSWORD
+            storePassword STORE_PASSWORD
+        }
+    }
+    applicationVariants.all{
+        variant->
+            variant.outputs.each {
+                output->
+                    def newName;
+                    def timeNow
+                    def outDirectory
+                    //是否为jenkins打包，输出路径不同
+                    if ("true".equals(IS_JENKINS)){
+                        //Jenkins打包输出到服务器路径
+                        timeNow =BUILD_TIME
+                        //BUILD_PATH为服务器输出路径
+                        outDirectory = BUILD_PATH
+                        newName = "WiFi-Chat"+APP_VERSION+"-"+".apk"
+                    }else {
+                        //本机打包输出路径
+                        timeNow = getDate()
+                        outDirectory =output.outputFile.getParent()
+                        if ("debug".equals(variant.buildType.name)){
+                            newName = "WiFi-CHat-v${APP_VERSION}-debug.apk"
+                        }else {
+                            newName = 'WiFi-CHat' + APP_VERSION + variant.buildType.name + '.apk'
+                        }
+
+                    }
+                    output.outputFile = new File(outDirectory+"/" + timeNow,newName)
+            }
+
     }
 }
 
