@@ -16,7 +16,7 @@ buildscript {
 }
 ext {
     configCompileSdkVersion = 23
-    configTargetSdkVersion = 23deprecated
+    configTargetSdkVersion = 23
     configBuildToolsVersion = '23.0.3'
 
     supportVersion = '23.1.1'
