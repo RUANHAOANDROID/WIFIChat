@@ -13,8 +13,27 @@ public class Entry implements Parcelable {
 	
 	private String name;
 	private String ipAdderss;
-	
-	
+
+	public Entry() {
+	}
+
+	protected Entry(Parcel in) {
+		name = in.readString();
+		ipAdderss = in.readString();
+	}
+
+	public static final Creator<Entry> CREATOR = new Creator<Entry>() {
+		@Override
+		public Entry createFromParcel(Parcel in) {
+			return new Entry(in);
+		}
+
+		@Override
+		public Entry[] newArray(int size) {
+			return new Entry[size];
+		}
+	};
+
 	public String getName() {
 		return name;
 	}
@@ -43,7 +62,9 @@ public class Entry implements Parcelable {
 
 	@Override
 	public void writeToParcel(Parcel dest, int flags) {
-		
+
+		dest.writeString(name);
+		dest.writeString(ipAdderss);
 	}
 
 }

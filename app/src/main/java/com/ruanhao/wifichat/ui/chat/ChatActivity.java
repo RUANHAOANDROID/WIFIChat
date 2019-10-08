@@ -209,7 +209,7 @@ public class ChatActivity extends BaseActivity implements ChatInputView.InputCli
 //						 .forResult(REQUEST_CODE_CHOOSE);
 
 				 Matisse.from(ChatActivity.this)
-				.choose(MimeType.allOf())
+				.choose(MimeType.ofImage())
 				.theme(R.style.Matisse_Dracula)
 				.countable(false)
 				.maxSelectable(9)

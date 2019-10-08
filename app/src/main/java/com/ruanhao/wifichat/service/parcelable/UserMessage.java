@@ -18,6 +18,28 @@ public class UserMessage implements Parcelable{
 	private long msg_time;
 	private String sendUsername;
 
+	public UserMessage() {
+	}
+
+	public UserMessage(Parcel in) {
+		id = in.readLong();
+		content = in.readString();
+		msg_time = in.readLong();
+		sendUsername = in.readString();
+	}
+
+	public static final Creator<UserMessage> CREATOR = new Creator<UserMessage>() {
+		@Override
+		public UserMessage createFromParcel(Parcel in) {
+			return new UserMessage(in);
+		}
+
+		@Override
+		public UserMessage[] newArray(int size) {
+			return new UserMessage[size];
+		}
+	};
+
 	public long getId() {
 		return id;
 	}
@@ -67,7 +89,11 @@ public class UserMessage implements Parcelable{
 	@Override
 	public void writeToParcel(Parcel dest, int flags) {
 		// TODO Auto-generated method stub
-		
+
+		dest.writeLong(id);
+		dest.writeString(content);
+		dest.writeLong(msg_time);
+		dest.writeString(sendUsername);
 	}
 
 }

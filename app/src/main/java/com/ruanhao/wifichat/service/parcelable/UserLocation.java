@@ -10,6 +10,28 @@ public class UserLocation implements Parcelable{
 	private double lon;
 	private double lat;
 
+	public UserLocation() {
+	}
+
+	protected UserLocation(Parcel in) {
+		username = in.readString();
+		name = in.readString();
+		lon = in.readDouble();
+		lat = in.readDouble();
+	}
+
+	public static final Creator<UserLocation> CREATOR = new Creator<UserLocation>() {
+		@Override
+		public UserLocation createFromParcel(Parcel in) {
+			return new UserLocation(in);
+		}
+
+		@Override
+		public UserLocation[] newArray(int size) {
+			return new UserLocation[size];
+		}
+	};
+
 	public String getUsername() {
 		return username;
 	}
@@ -51,7 +73,11 @@ public class UserLocation implements Parcelable{
 	@Override
 	public void writeToParcel(Parcel dest, int flags) {
 		// TODO Auto-generated method stub
-		
+
+		dest.writeString(username);
+		dest.writeString(name);
+		dest.writeDouble(lon);
+		dest.writeDouble(lat);
 	}
 
 }

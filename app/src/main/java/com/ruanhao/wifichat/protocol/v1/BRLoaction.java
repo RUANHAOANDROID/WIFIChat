@@ -13,6 +13,23 @@ public class BRLoaction implements Parcelable {
 	private double lon;
 	private double lat;
 
+	protected BRLoaction(Parcel in) {
+		lon = in.readDouble();
+		lat = in.readDouble();
+	}
+
+	public static final Creator<BRLoaction> CREATOR = new Creator<BRLoaction>() {
+		@Override
+		public BRLoaction createFromParcel(Parcel in) {
+			return new BRLoaction(in);
+		}
+
+		@Override
+		public BRLoaction[] newArray(int size) {
+			return new BRLoaction[size];
+		}
+	};
+
 	public double getLon() {
 		return lon;
 	}
@@ -41,7 +58,8 @@ public class BRLoaction implements Parcelable {
 
 	@Override
 	public void writeToParcel(Parcel dest, int flags) {
-
+		dest.writeDouble(lon);
+		dest.writeDouble(lat);
 	}
 
 }

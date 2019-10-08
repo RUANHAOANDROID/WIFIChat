@@ -14,7 +14,28 @@ public class ReplyMessage implements Parcelable{
 	private int cmd;
 	private int packet_no;
 	private int msg_id;
-	
+
+	public ReplyMessage() {
+	}
+
+	protected ReplyMessage(Parcel in) {
+		cmd = in.readInt();
+		packet_no = in.readInt();
+		msg_id = in.readInt();
+	}
+
+	public static final Creator<ReplyMessage> CREATOR = new Creator<ReplyMessage>() {
+		@Override
+		public ReplyMessage createFromParcel(Parcel in) {
+			return new ReplyMessage(in);
+		}
+
+		@Override
+		public ReplyMessage[] newArray(int size) {
+			return new ReplyMessage[size];
+		}
+	};
+
 	public int getCmd() {
 		return cmd;
 	}
@@ -52,7 +73,10 @@ public class ReplyMessage implements Parcelable{
 	@Override
 	public void writeToParcel(Parcel dest, int flags) {
 		// TODO Auto-generated method stub
-		
+
+		dest.writeInt(cmd);
+		dest.writeInt(packet_no);
+		dest.writeInt(msg_id);
 	}
 	
 	
