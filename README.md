@@ -30,9 +30,9 @@ TCP服务端口	12425
 | 字段   	|     数据类型  	|  注释 	|
 |     ---	|       ---	|    ---	|
 |   id     	|     bigint     	|    消息类型   	|
-|    type    	|   tinyint       	|    消息类型 (1：文本  2：位置  3：附件通知)  	|
-|   	msg_time     |   	text       |   	 消息内容   |
-|   	content     |   	datetime       |   	消息发送时间或接收时间   |
+|    type    	|   tinyint     |    消息类型 (1：文本  2：位置  3：附件通知)  	|
+|   	msg_time |   	datetime   |   消息发送时间或接收时间	    |
+|   	content  |   	 text      |   	消息内容    |
 
 <h2>用户关系表</h2>
 
