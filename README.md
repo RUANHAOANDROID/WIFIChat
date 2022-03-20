@@ -76,18 +76,3 @@ TCP服务端口	12425
 [matisse](https://github.com/zhihu/Matisse/)
 
 [rxpermissions](https://github.com/tbruyelle/RxPermissions/)
-
-<h1>不足以及改进</h1>
-
-第三方库使用比较零散 未包装
-
-数据库设计
-
- Android5.0版本以后的权限问题
-
-
-
-
-<a href='https://travis-ci.org/RUANHAOANDROID/WIFI-Chat'><img src='https://travis-ci.org/RUANHAOANDROID/WIFI-Chat.svg?branch=master'></a>
-
-
