@@ -1,5 +1,5 @@
 # WIFI-Chat
-[![漏洞检测](https://snyk.io/test/github/ruanhaoandroid/wifi-chat/badge.svg)](https://snyk.io/test/github/ruanhaoandroid/wifi-chat)
+
 
 <h1>基本功能</h1>
 
