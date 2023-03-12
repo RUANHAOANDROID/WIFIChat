@@ -36,7 +36,7 @@ TCP服务端口	12425
 
 <h2>用户关系表</h2>
 
-| Tables   |      Are      |       Cool |
+| 字段   |      数据类型      |       注释 |
 |       ---|           --- |        --- |
 |username	 |         |	当前登录用户的用户名|
 |msg_id|	bigint	|	消息id|
